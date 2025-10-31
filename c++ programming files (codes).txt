@@ -731,3 +731,23 @@ using namespace std;
 
 
 
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() 
+    {
+    int a = 10;    
+    //declaration
+    int* ptr = &a;   
+
+    cout << "a of 'a': " << a<< endl;
+    cout << "Address of 'a': " << &a << endl;
+    cout << "Value of 'ptr' (address it holds): " << ptr << endl;
+    cout << "Value pointed to by 'ptr' (dereferencing): " << *ptr << endl;
+
+    
+    *ptr = 20;
+    cout << "New value of 'a' after modification through pointer: " << a << endl;
+
+    return 0;
+}
